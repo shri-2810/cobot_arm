@@ -27,22 +27,27 @@ This project is a collaborative robotic arm (cobot) controlled using an Arduino 
 - **Cobot Arm Frame** (3D Printed)
 - **Mounting Brackets for Servo Motors**
 - **Bearings and Screws**
+- 
 ## Circuit Connections
 
+### Bluetooth Module
+| Component | Arduino Pin | 
+|-----------|------------| 
+| VCC | 5V | 
+| GND | GND | 
+| TX | RX (Arduino) | 
+| RX | TX (Arduino) | 
+
+### Servo Motors
 | Component | Arduino Pin | Other Connections |
 |-----------|------------|-------------------|
-| **HC-05 Bluetooth Module** | | |
-| VCC | 5V | - |
-| GND | GND | - |
-| TX | RX (Arduino) | - |
-| RX | TX (Arduino) | - |
-| **SG90/MG995 Servo Motors** | | |
 | Servo 1 Signal | D3 | Power to external 5V, GND to Arduino GND |
 | Servo 2 Signal | D5 | Power to external 5V, GND to Arduino GND |
 | Servo 3 Signal | D6 | Power to external 5V, GND to Arduino GND |
 | Servo 4 Signal | D9 | Power to external 5V, GND to Arduino GND |
 | Servo 5 Signal | D10 | Power to external 5V, GND to Arduino GND |
 | Servo 6 Signal | D11 | Power to external 5V, GND to Arduino GND |
+
 | **Energy Harvesting Circuit** | | |
 | Neodymium Magnet | - | Oscillates near coil |
 | Coil | - | Induces voltage |
