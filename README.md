@@ -27,24 +27,28 @@ This project is a collaborative robotic arm (cobot) controlled using an Arduino 
 - **Cobot Arm Frame** (3D Printed)
 - **Mounting Brackets for Servo Motors**
 - **Bearings and Screws**
+## Circuit Connections
 
-## Circuit Connection
-### Connect the HC-05 Bluetooth module:
-- **VCC** → 5V (Arduino)
-- **GND** → GND
-- **TX** → RX (Arduino)
-- **RX** → TX (Arduino)
-
-### Connect the servo motors:
-- **Power (Red)** → External 5V supply
-- **Ground (Black/Brown)** → GND
-- **Signal (Orange/Yellow)** → Arduino PWM Pins (e.g., D3, D5, D6, D9, D10, D11)
-
-### Connect Energy Harvesting Circuit:
-1. **Neodymium magnet oscillates near a coil** to induce voltage.
-2. **Rectifier circuit conditions the output.**
-3. **Output stored in the supercapacitor.**
-4. **Low-power sensors connected to the supercapacitor circuit for power.**
+| Component | Arduino Pin | Other Connections |
+|-----------|------------|-------------------|
+| **HC-05 Bluetooth Module** | | |
+| VCC | 5V | - |
+| GND | GND | - |
+| TX | RX (Arduino) | - |
+| RX | TX (Arduino) | - |
+| **SG90/MG995 Servo Motors** | | |
+| Servo 1 Signal | D3 | Power to external 5V, GND to Arduino GND |
+| Servo 2 Signal | D5 | Power to external 5V, GND to Arduino GND |
+| Servo 3 Signal | D6 | Power to external 5V, GND to Arduino GND |
+| Servo 4 Signal | D9 | Power to external 5V, GND to Arduino GND |
+| Servo 5 Signal | D10 | Power to external 5V, GND to Arduino GND |
+| Servo 6 Signal | D11 | Power to external 5V, GND to Arduino GND |
+| **Energy Harvesting Circuit** | | |
+| Neodymium Magnet | - | Oscillates near coil |
+| Coil | - | Induces voltage |
+| Rectifier Circuit | - | Conditions output |
+| Supercapacitor | - | Stores energy |
+| Low-power sensors | - | Connected to supercapacitor |
 
 ## Software Setup
 1. Install the Arduino IDE.
