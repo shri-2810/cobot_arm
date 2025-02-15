@@ -47,15 +47,13 @@ This project is a collaborative robotic arm (cobot) controlled using an Arduino 
 4. **Low-power sensors connected to the supercapacitor circuit for power.**
 
 ## Software Setup
-### Install the Arduino IDE.
-### Install the necessary libraries:
+1. Install the Arduino IDE.
+2. Install the necessary libraries:
 ```cpp
 #include <Servo.h>
 ```
-
-### Upload the Arduino code for Bluetooth control and servo operation
-
-### Use a mobile app like **"Arduino Bluetooth Controller"** to send commands.
+3.Upload the Arduino code for Bluetooth control and servo operation
+4.Use a mobile app like **"Arduino Bluetooth Controller"** to send commands.
 
 ## Installation and Usage
 1. **Clone this repository:**
