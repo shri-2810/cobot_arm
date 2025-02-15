@@ -48,12 +48,11 @@ This project is a collaborative robotic arm (cobot) controlled using an Arduino 
 | Servo 5 Signal | D10 | Power to external 5V, GND to Arduino GND |
 | Servo 6 Signal | D11 | Power to external 5V, GND to Arduino GND |
 
-| **Energy Harvesting Circuit** | | |
-| Neodymium Magnet | - | Oscillates near coil |
-| Coil | - | Induces voltage |
-| Rectifier Circuit | - | Conditions output |
-| Supercapacitor | - | Stores energy |
-| Low-power sensors | - | Connected to supercapacitor |
+## Self-Energizing Circuit
+The energy harvesting system consists of neodymium magnets attached to moving parts of the cobot arm. As the arm moves, the changing magnetic field induces voltage in a standard coil placed strategically near the motion path. The induced AC voltage is then rectified using a diode bridge and stored in a supercapacitor. The stored energy is used to power low-power sensors in the system.
+- **Neodymium Magnet:** Fixed on moving parts of the cobot arm.
+- **Standard Coil:** Placed near moving parts to capture electromagnetic energy.
+- **Supercapacitor Storage:** Stores harvested energy for powering low-power sensors.
 
 ## Software Setup
 1. Install the Arduino IDE.
