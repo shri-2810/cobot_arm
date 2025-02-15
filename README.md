@@ -13,21 +13,21 @@ This project is a collaborative robotic arm (cobot) controlled using an Arduino 
 ## Components Required
 
 ### Electronics
-- **1x Arduino Uno**
-- **3x SG90 Servo Motors**
-- **3x MG995 Servo Motors**
-- **1x HC-05/HC-06 Bluetooth Module**
-- **1x Supercapacitor (suitable for low-power sensors)**
-- **Neodymium Magnets**
-- **Standard Coil for Energy Harvesting**
-- **Connecting Wires**
-- **Power Supply (for initial servo operation)**
+- 1x Arduino Uno
+- 3x SG90 Servo Motors
+- 3x MG995 Servo Motors
+- 1x HC-05/HC-06 Bluetooth Module
+- 1x Supercapacitor **(suitable for low-power sensors)**
+- Neodymium Magnets
+- Standard Coil for Energy Harvesting
+- Connecting Wires
+- Power Supply **(for initial servo operation)**
 
 ### Mechanical
-- **Cobot Arm Frame** (3D Printed)
-- **Mounting Brackets for Servo Motors**
-- **Bearings and Screws**
-- 
+- Cobot Arm Frame (3D Printed)
+- Mounting Brackets for Servo Motors
+- Bearings and Screws
+  
 ## Circuit Connections
 
 ### Bluetooth Module
